@@ -8,13 +8,48 @@
     <a-scene light="defaultLightsEnabled: false">
 
       <!-- light source element -->
-      <!-- <a-entity light="type: ambient"></a-entity> -->
+       <a-entity light="type: ambient" ></a-entity> 
 
       <!-- our camera aka user perspective element -->
-      <!-- <a-entity camera look-controls wasd-controls position="0 0 15"></a-entity> -->
+       <a-entity camera look-controls wasd-controls position="0 0 15"></a-entity> 
 
       <!-- our initial sphere in the center of the scene -->
-      <!-- your sphere here! -->
+      <a-sky src="https://c1.staticflickr.com/4/3861/15334784615_c493da0f85_b.jpg"></a-sky>
+      <a-sphere position="0 0 0" radius = "2" color="yellow"></a-sphere>
+      <a-torus position="0 0 0" radius="10" color="black" radius-tubular=".05">
+        <a-animation
+          attribute="rotation"
+          dur="1000"
+          fill="none"
+          from="0 0 0"
+          to="360 360 360"
+          easing="linear"
+          repeat="indefinite">
+        </a-animation>
+      </a-torus>
+      <a-torus position="0 0 0" radius="8" color="black" radius-tubular=".05">
+        <a-animation
+          attribute="rotation"
+          dur="1600"
+          fill="none"
+          from="0 0 0"
+          to="360 360 0"
+          easing="linear"
+          repeat="indefinite">
+        </a-animation>
+      </a-torus>
+      <!--<a-torus position="-5 -5 -5" color="tan" radius="3" radius-tubular=".5">  </a-torus>-->
+      <a-sphere src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Equirectangular_projection_SW.jpg/400px-Equirectangular_projection_SW.jpg" position = "0 0 0" radius = "6">  
+      <a-animation
+          attribute="rotation"
+          dur="1000"
+          fill="none"
+          from="0 0 0"
+          to="360 360 0"
+          easing="linear"
+          repeat="indefinite">
+        </a-animation>
+        </a-sphere>
 
     </a-scene>
 
